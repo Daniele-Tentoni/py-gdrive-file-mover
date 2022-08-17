@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "py-gdrive-file-mover"
+version = "0.1.0"
+description = "Utility to move file from one folder to another with Python and Google Drive Api."
+authors = ["Daniele Tentoni <daniele.tentoni.1996@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+google-api-python-client = "^2.57.0"
+google-auth-httplib2 = "^0.1.0"
+google-auth-oauthlib = "^0.5.2"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+pre-commit = "^2.20.0"
+pytest = "^7.1.2"
+python-dotenv = "^0.20.0"
+pyupgrade = "^2.37.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-lenght = 79
+target-version = ['py310']

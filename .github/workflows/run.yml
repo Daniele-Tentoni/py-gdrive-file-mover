@@ -1,0 +1,22 @@
+name: Run
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-in-project: true
+
+      - name: Install dependencies
+        run: poetry install
+
+      - name: Run
+        run: poetry run python py_gdrive_file_mover/py_gdrive_file_mover.py ${{ secrets.FROM }} ${{ secrets.TO }}

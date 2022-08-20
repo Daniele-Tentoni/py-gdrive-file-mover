@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# TODO: Comment following line if you wanna upload with git your credentials.json file
+credentials.json
+token.json

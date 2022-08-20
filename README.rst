@@ -21,6 +21,8 @@ First at all, you need to authenticate with yuor account. First time you execute
 
 Use `--help` option to see more info about possibility of this command.
 
+If you want to use this utility as a cronjob, add to your repository the necessary credentials.json and token.json (make the repo private) and use the cronjob github action to run your software. Remember that you have only 2000 minutes for Github Actions for Free Github Plan Users.
+
 How to contribute
 ''''''''''''''''''
 

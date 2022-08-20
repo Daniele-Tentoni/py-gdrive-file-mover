@@ -1,0 +1,13 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Py GDrive File Mover
+Upstream-Contact: Daniele Tentoni <daniele.tentoni.1996@gmail.com>
+Source: https://github.com/Daniele-Tentoni/py-gdrive-file-mover
+
+Files:
+ .pre-commit-config.yaml
+ .gitignore
+ pyproject.toml
+ poetry.lock
+ README.rst
+Copyright: 2022 Daniele Tentoni <daniele.tentoni.1996@gmail.com>
+License: CC0-1.0
